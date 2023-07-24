@@ -1,29 +1,49 @@
-<p>
-<table border="1">
-    <tr>
-        <th>Mission Type</th>
-        <th>Price</th>
-    </tr>
-    <tr>
-        <th>Coco</th>
-        <th>$6.66</th>
-    </tr>
-    <tr>
-        <th>Banana</th>
-        <th>$12.0</th>
-    </tr>
-</table>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Order</title>
+        <meta name="description" content="Order">
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link  rel="stylesheet" href="styles/style.css" />
+    </head>
 
-<form>
-    <label>Mission Type</label>
-    <input name="Mission Type"><br>
-    <label>Price</label>
-    <input name="Price"><br>
-    <label>Due Date</label>
-    <input name="Due Date" type="date"><br>
-    <button>Summit</button>
-</form>
-
-
-<a href="/index.html">Home</a>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener('load', addDarkmodeWidget);
+    </script>
+    
+    <body>
+        <p>
+            <table border="1">
+                <tr>
+                    <th>Mission Type</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <th>Coco</th>
+                    <th>$6.66</th>
+                </tr>
+                <tr>
+                    <th>Banana</th>
+                    <th>$12.0</th>
+                </tr>
+            </table>
+        </p>
+        
+        <form>
+            <label>Mission Type</label>
+            <input name="Mission Type"><br>
+            <label>Price</label>
+            <input name="Price"><br>
+            <label>Due Date</label>
+            <input name="Due Date" type="date"><br>
+            <button>Summit</button>
+        </form>
+        
+        <a href="/index.html">Home</a>
+    </body>
+</html>
