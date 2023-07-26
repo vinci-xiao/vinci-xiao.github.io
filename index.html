@@ -25,7 +25,7 @@
     </script>
     
     <body>
-        <img src="./images/logo.png" width="200" height="200" alt="Vincy Xiao Logo">
+        <img src="./images/logo.png" width="200" height="200" alt="Vincy Xiao Logo" id="logo">
         <img src="./images/rotating_head.gif" width="200">
 
         <h1>Vincy Xiao Website</h1>
@@ -59,4 +59,15 @@
         <p><video src="./images/squad.mp4" controls type="video/mp4" width="500"></video></p>
 
     </body>
+
+    <script>
+        function setColor() {
+            var hue_1 = Math.floor(Math.random()*360);
+            var hue_2 = Math.floor(Math.random()*360);
+            document.querySelector('#logo').style.filter = "hue-rotate("+hue_1+"deg) saturate(65%)";
+            document.querySelector('#logo').style.filter = "hue-rotate("+hue_2+"deg) saturate(65%)";
+        }
+            window.addEventListener("load", setColor);
+    </script>
+    
 </html>
